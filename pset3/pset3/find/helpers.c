@@ -38,10 +38,7 @@ bool search(int value, int values[], int n)
             ending = middle - 1;
         else
             beggining = middle + 1;
-    }
-
-    return false;
-    
+    }    
     return false;
 }
 
@@ -67,35 +64,35 @@ void sort(int values[], int n)
     return;
 }
 
-// bool linear_search(int value, int values[], int n)
-// {
-//     for (int i = 0; i < n; i++)
-//         if (values[i] == value)
-//             return true;
+bool linear_search(int value, int values[], int n)
+{
+     for (int i = 0; i < n; i++)
+       if (values[i] == value)
+       return true;
 
-//     return false;
-// }
+       return false;
+}
  
 // // Custom sort functions
-// void bubble_sort(int values[], int n)
-// {
-//     bool iter;
+void bubble_sort(int values[], int n)
+{
+     bool iter;
 
-//     do
-//     {
-//         iter = false;
-//         for (int i = 0; i < n-1; i++)
-//         {
-//             if (values[i] > values[i+1])
-//             {
-//                 int temp = values[i];
-//                 values[i] = values[i+1];
-//                 values[i+1] = temp;
-//                 iter = true;
-//             }
-//         }
-//     } while (iter);
-//     return;
-// }
+     do
+     {
+         iter = false;
+         for (int i = 0; i < n-1; i++)
+         {
+             if (values[i] > values[i+1])
+             {
+                 int temp = values[i];
+                 values[i] = values[i+1];
+                 values[i+1] = temp;
+                 iter = true;
+             }
+         }
+     } while (iter);
+     return;
+}
  
 }
